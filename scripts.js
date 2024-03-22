@@ -42,7 +42,7 @@ function scrub(e) {
 video.addEventListener("click", togglePlay);
 video.addEventListener("play", updateButton);
 video.addEventListener("pause", updateButton);
-
+video.addEventListener('dblclick', () => video.requestFullscreen())
 video.addEventListener("timeupdate", handleProgress);
 
 toggle.addEventListener("click", togglePlay);
